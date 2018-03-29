@@ -26,6 +26,8 @@ public class FindFilesInFolder {
 
     static File folder = new File(System.getProperty("user.dir") + "/src/main/resources/filesinfolder/");
     static String  usefulFile = null;
+    private static XSSFCell Cell_1;
+    private static XSSFRow Row_1;
 
     public static void main(String args[]) throws Exception {
 
@@ -52,7 +54,7 @@ public class FindFilesInFolder {
                 System.out.println("found valid files");
 
                 usefulFiles.add(numberOfFiles[i].toString());
-                System.out.println("ErriPukaaaa   : " + usefulFiles.size()  );
+                System.out.println("CSV and Excel files count   : " + usefulFiles.size()  );
             }
         }
 
@@ -81,21 +83,6 @@ public class FindFilesInFolder {
     }
 
 
-    /*public static void setExcelFile(String Path,String SheetName) throws Exception {
-        try {
-            // Open the Excel file
-            FileInputStream ExcelFile = new FileInputStream(Path);
-            // Access the required test data sheet
-            Excel = new XSSFWorkbook(ExcelFile);
-            Esheet = Excel.getSheet(SheetName);
-            System.out.print("Pukaaaaaaaaa Row Count:  "  + Esheet.getLastRowNum());
-
-        } catch (Exception e){
-            throw (e);
-        }
-    }*/
-
-
     public static XSSFSheet setExcelFile(String Path, String SheetName) throws Exception {
         try {
             // Open the Excel file
@@ -103,7 +90,7 @@ public class FindFilesInFolder {
             // Access the required test data sheet
             Excel = new XSSFWorkbook(ExcelFile);
             Esheet = Excel.getSheet(SheetName);
-            System.out.print("Pukaaaaaaaaa Row Count:  "  + Esheet.getLastRowNum());
+            System.out.print("Row Count:  "  + Esheet.getLastRowNum());
 
         } catch (Exception e){
             throw (e);
@@ -121,28 +108,24 @@ public class FindFilesInFolder {
             return"";
         }
     }
-    //This method is to write in the Excel cell, Row num and Col num are the parameters
 
-     public static void setCellData(String VenicalInfo, int ColNum,String resultToExcel) throws Exception	{
+
+     public static void setCellData(String VenicalInfo, int ColNum,int rowNum,String resultToExcel) throws Exception	{
+
         try{
             System.out.print("Dvla File Path:   "  + folder.getAbsolutePath() +"\\resultsoutput\\"+  "results.xlsx");
+
             Row  = Esheet.getRow(0);
-            Cell = Row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
-            if (Cell == null) {
-                Cell = Row.createCell(ColNum);
-                Cell.setCellValue(VenicalInfo);
+            Cell = Row.createCell(ColNum);
+            Cell.setCellValue(VenicalInfo);
 
-            } else {
-                Cell.setCellValue(VenicalInfo);
-
-                Cell = Row.createCell(3);
-                Cell.setCellValue(resultToExcel);
-            }
+            Row_1  = Esheet.getRow(rowNum);
+            Cell_1 = Row_1.createCell(3);
+            Cell_1.setCellValue(resultToExcel);
 
 
-            // Constant variables Test Data path and Test Data file name
-            FileOutputStream fileOut = new FileOutputStream( folder.getAbsolutePath() +"\\resultsoutput\\"+  "results.xlsx");
-            System.out.print("Pukaaaaaaaaa :  "  + folder.getAbsolutePath() +"\\resultsoutput\\"+  "results.xlsx");
+
+             FileOutputStream fileOut = new FileOutputStream( folder.getAbsolutePath() +"\\resultsoutput\\"+  "results.xlsx");
             Excel.write(fileOut);
             fileOut.flush();
             fileOut.close();
@@ -150,22 +133,6 @@ public class FindFilesInFolder {
             throw (e);
         }
     }
-
-
-/*    public static void setCellData(String Result,  int RowNum, int ColNum) throws Exception	{
-        FileInputStream fis = new FileInputStream(new File(folder.getAbsolutePath() +"\\resultsoutput\\"+"results.xlsx"));
-        XSSFWorkbook workbook = new XSSFWorkbook (fis);
-        XSSFSheet sheet = workbook.getSheetAt(0);
-        XSSFRow row1 = sheet.createRow(RowNum);
-        XSSFCell r1c1 = row1.createCell(ColNum);
-        r1c1.setCellValue(Result);
-
-
-         FileOutputStream fos =new FileOutputStream(new File(folder.getAbsolutePath() +"\\resultsoutput\\"+"results.xlsx"));
-       workbook.write(fos);
-        fos.close();
-        System.out.println("Done");
-    }*/
 
 
 

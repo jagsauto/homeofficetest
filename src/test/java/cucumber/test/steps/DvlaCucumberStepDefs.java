@@ -37,15 +37,21 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
     @Then("^read registration number from inputfolder and enter$")
     public void read_registration_number_from_inputfolder_and_enter() throws Throwable {
         List usefulFilesData = returnCellData(findFilesInfo(folder));
-        int j =0 ; int k=0; String resultToExcel ="PASS";
-        for(int i=0;i<=usefulFilesData.size();){
-        setCellData(usefulFilesData.get( i ).toString(),k,resultToExcel);
+        int j =0 ; int k=0; int rowClont =1; String resultToExcel;
+        for(int i=0;i<=usefulFilesData.size();rowClont++){
+        resultToExcel ="PASS";
+        setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);
         driver.findElement( enter_venicle_number ).sendKeys( usefulFilesData.get( i ).toString() );
         driver.findElement( continue_button ).submit();i = i+1;
-        try { Assert.assertFalse( driver.findElement( You_must_enter_your_registration_number_in_a_valid_format ).isDisplayed() ); }
-        catch (Exception e) {   }
-        Assert.assertEquals(driver.findElement(Make).getText() ,usefulFilesData.get( i ).toString()); i = i+1;k=k+1; if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString())){ resultToExcel="PASS";} else resultToExcel="FAIL" ;  setCellData(usefulFilesData.get( i ).toString(),k,resultToExcel);
-        Assert.assertEquals(driver.findElement(Colour).getText(),usefulFilesData.get( i ).toString()); i = i+1; k=k+1;if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString())){ resultToExcel="PASS";} else resultToExcel="FAIL" ;  setCellData(usefulFilesData.get( i ).toString(),k,resultToExcel); k=0;j= j+1;
+        try { Assert.assertFalse( driver.findElement( You_must_enter_your_registration_number_in_a_valid_format ).isDisplayed() ); } catch (Exception e) {   }
+        Assert.assertEquals(driver.findElement(Make).getText() ,usefulFilesData.get( i ).toString()); i = i+1;k=k+1;
+        if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString()))
+          resultToExcel="PASS";
+        else resultToExcel="FAIL" ;
+
+
+        setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);
+        Assert.assertEquals(driver.findElement(Colour).getText(),usefulFilesData.get( i ).toString()); i = i+1; k=k+1;if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString()))  resultToExcel="PASS";  resultToExcel ="PASS"; setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);k=0;j= j+1;
         driver.navigate().back();
         }
         driver.close();

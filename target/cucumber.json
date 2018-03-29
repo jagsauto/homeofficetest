@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3506578763,
+              "duration": 3553997413,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1276610202,
+              "duration": 1270816146,
               "status": "passed"
             },
             "line": 6,
@@ -36,8 +36,8 @@
           },
           {
             "result": {
-              "duration": 3389002945,
-              "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\r\n\tat org.testng.Assert.assertEquals(Assert.java:125)\r\n\tat org.testng.Assert.assertEquals(Assert.java:178)\r\n\tat org.testng.Assert.assertEquals(Assert.java:188)\r\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:51)\r\n\tat ✽.Then read registration number from inputfolder and enter(hm.feature:7)\r\n",
+              "duration": 3868284981,
+              "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\r\n\tat org.testng.Assert.assertEquals(Assert.java:125)\r\n\tat org.testng.Assert.assertEquals(Assert.java:178)\r\n\tat org.testng.Assert.assertEquals(Assert.java:188)\r\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:54)\r\n\tat ✽.Then read registration number from inputfolder and enter(hm.feature:7)\r\n",
               "status": "failed"
             },
             "line": 7,
