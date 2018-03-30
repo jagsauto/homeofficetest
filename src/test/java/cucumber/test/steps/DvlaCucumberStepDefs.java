@@ -33,7 +33,12 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
         driver.findElement( startnow_button ).click();
         //throw new PendingException();
     }
-
+/**
+ * NEED TO IMPLEMENT SOFT ASSETION TO AVOID TERMINATION OF TEST WHEN ASSERT FAILS
+ *
+ *
+ *
+ */
     @Then("^read registration number from inputfolder and enter$")
     public void read_registration_number_from_inputfolder_and_enter() throws Throwable {
         List usefulFilesData = returnCellData(findFilesInfo(folder));
@@ -51,7 +56,8 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
 
 
         setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);
-        Assert.assertEquals(driver.findElement(Colour).getText(),usefulFilesData.get( i ).toString()); i = i+1; k=k+1;if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString()))  resultToExcel="PASS";  resultToExcel ="PASS"; setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);k=0;j= j+1;
+        Assert.assertEquals(driver.findElement(Colour).getText(),usefulFilesData.get( i ).toString());
+        i = i+1; k=k+1;if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString()))  resultToExcel="PASS";  resultToExcel ="PASS"; setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);k=0;j= j+1;
         driver.navigate().back();
         }
         driver.close();

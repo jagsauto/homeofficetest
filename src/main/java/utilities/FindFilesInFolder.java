@@ -113,19 +113,21 @@ public class FindFilesInFolder {
      public static void setCellData(String VenicalInfo, int ColNum,int rowNum,String resultToExcel) throws Exception	{
 
         try{
-            System.out.print("Dvla File Path:   "  + folder.getAbsolutePath() +"\\resultsoutput\\"+  "results.xlsx");
+            System.out.print("Dvla File Path:   "  + folder.getAbsolutePath() +"/resultsoutput/"+  "results.xlsx");
 
             Row  = Esheet.getRow(0);
             Cell = Row.createCell(ColNum);
             Cell.setCellValue(VenicalInfo);
 
-            Row_1  = Esheet.getRow(rowNum);
-            Cell_1 = Row_1.createCell(3);
-            Cell_1.setCellValue(resultToExcel);
+
+                Row_1 = Esheet.getRow(rowNum);
+                Cell_1 = Row_1.createCell(3);
+                Cell_1.setCellValue(resultToExcel);
 
 
 
-             FileOutputStream fileOut = new FileOutputStream( folder.getAbsolutePath() +"\\resultsoutput\\"+  "results.xlsx");
+
+             FileOutputStream fileOut = new FileOutputStream( folder.getAbsolutePath() +"/resultsoutput/"+  "results.xlsx");
             Excel.write(fileOut);
             fileOut.flush();
             fileOut.close();
