@@ -23,7 +23,7 @@ read comments in ->  /src/main/java/utilities/ChooseBrowser.java
 ----------------------
 
 ----------------------
-If system error shown "The driver is not executable:"  for LINUX or MAC the 
+If system throw error like  "The driver is not executable:"  for LINUX or MAC then 
 
 Step 1) opne terminal and navigate to ->  /src/test/resources/chromewebdrivers/ 
 
