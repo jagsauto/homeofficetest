@@ -45,21 +45,21 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 3151230370,
+  "duration": 3189603649,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1367962970,
+  "duration": 1689170000,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter()"
 });
 formatter.result({
-  "duration": 6448402082,
+  "duration": 6267405241,
   "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\n\tat org.testng.Assert.assertEquals(Assert.java:116)\n\tat org.testng.Assert.assertEquals(Assert.java:190)\n\tat org.testng.Assert.assertEquals(Assert.java:200)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:94)\n\tat ✽.Then read registration number from inputfolder and enter registration number validate color and make then generate report(hm.feature:9)\n",
   "status": "failed"
 });
@@ -184,14 +184,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 3330296359,
+  "duration": 3562104456,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1436656354,
+  "duration": 1912139010,
   "status": "passed"
 });
 formatter.match({
@@ -212,7 +212,7 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 1587382433,
+  "duration": 1570484748,
   "status": "passed"
 });
 formatter.scenario({
@@ -253,14 +253,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 2176499420,
+  "duration": 2162527927,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1355838940,
+  "duration": 1386492601,
   "status": "passed"
 });
 formatter.match({
@@ -281,7 +281,7 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 1355578740,
+  "duration": 1280189936,
   "status": "passed"
 });
 formatter.scenario({
@@ -322,14 +322,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 2219532784,
+  "duration": 2150665895,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1426610771,
+  "duration": 1319018808,
   "status": "passed"
 });
 formatter.match({
@@ -350,7 +350,7 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 1075098963,
+  "duration": 1496315351,
   "error_message": "java.lang.AssertionError: expected [RED] but found [WHITE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\n\tat org.testng.Assert.assertEquals(Assert.java:116)\n\tat org.testng.Assert.assertEquals(Assert.java:190)\n\tat org.testng.Assert.assertEquals(Assert.java:200)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(DvlaCucumberStepDefs.java:124)\n\tat ✽.Then Enter registration number WAZ2144 then validate made VOLKSWAGEN and color RED(hm.feature:16)\n",
   "status": "failed"
 });
@@ -392,14 +392,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 2224611619,
+  "duration": 2208539360,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1495813230,
+  "duration": 1833789381,
   "status": "passed"
 });
 formatter.match({
@@ -420,7 +420,7 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 1427187585,
+  "duration": 2598254859,
   "status": "passed"
 });
 });
