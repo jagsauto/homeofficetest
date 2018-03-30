@@ -12,7 +12,8 @@ INPUT FOLDER and FILES:/src/main/resources/filesinfolder/
 
 
 
-*****  DEFAULT BROWSER IS CHROME
+*****  DEFAULT BROWSER IS CHROME *****
+
 ---------------------
 
 FOR FIREFOX (has to pass as environment vairable form maven Ex: -DBrowser = chrome/firefox)
@@ -26,7 +27,4 @@ If system error shown "The driver is not executable:"  for LINUX or MAC the
 
 Step 1) opne terminal and navigate to ->  /src/test/resources/chromewebdrivers/ 
 
-Step 2)  FOR Linux users  type ->  chmod +x linuxchromedriver     AND  For mac users -> chmod +x MacChromedriver  
-----------------------
-
-******
+Step 2)  FOR Linux users  type ->  chmod +x linuxchromedriver     AND  For mac users -> chmod +x MacChromedriver
