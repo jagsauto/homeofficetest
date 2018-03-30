@@ -1,7 +1,8 @@
 # Home office tests
 
 -------------------
-
+MAVEN
+-----
 Run Test With MAVEN
 
 mvn integration-test -Pcucumber "-Dcucumber.options=--tags  @homeoffice_excelreader,@homeoffice_datadriver  --plugin html:target/cucumber/homeoficetest/ --plugin json:target/cucumber/homeoficetest/cucumber.json"
@@ -9,19 +10,26 @@ mvn integration-test -Pcucumber "-Dcucumber.options=--tags  @homeoffice_excelrea
 ---------------
 
 ----------------
+REPORTS
+----
 
-REPORT: target/cucumber/homeoficetest/index.html
+CUCUMBER REPORT: target/cucumber/homeoficetest/index.html
 
 EXCEL REPORT: src/main/resources/filesinfolder/resultsoutput/results.xls (this needs refinement) 
 
+---
+DATA
+---
+------------
 INPUT FOLDER and FILES:/src/main/resources/filesinfolder/
 
 --------------
 
 
 ---------------------
-
-
+BROWSER
+---
+-----
 *****  DEFAULT BROWSER IS CHROME *****
 
 ---------------------
