@@ -12,12 +12,12 @@ mvn integration-test -Pcucumber "-Dcucumber.options=--tags  @homeoffice_excelrea
 ----------------
 REPORTS
 ----
-
 CUCUMBER REPORT: target/cucumber/homeoficetest/index.html
 
 EXCEL REPORT: src/main/resources/filesinfolder/resultsoutput/results.xls (this needs refinement) 
 
 ---
+
 DATA
 ---
 ------------
@@ -48,3 +48,9 @@ Step 2)  FOR Linux users  type ->  chmod +x linuxchromedriver     AND  For mac
 
 -----------------------
 
+SCREENSHOTS
+---
+------
+/target/cucumber/screenshots
+
+------
