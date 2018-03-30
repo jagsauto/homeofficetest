@@ -18,6 +18,13 @@ EXCEL REPORT: src/main/resources/filesinfolder/resultsoutput/results.xls (this n
 
 ---
 
+SCREENSHOTS
+---
+------
+/target/cucumber/screenshots
+
+------
+
 DATA
 ---
 ------------
@@ -27,7 +34,7 @@ INPUT FOLDER and FILES:/src/main/resources/filesinfolder/
 
 
 ---------------------
-BROWSER
+**BROWSER SETTINGS
 ---
 -----
 *****  DEFAULT BROWSER IS CHROME *****
@@ -48,9 +55,4 @@ Step 2)  FOR Linux users  type ->  chmod +x linuxchromedriver     AND  For mac
 
 -----------------------
 
-SCREENSHOTS
----
-------
-/target/cucumber/screenshots
 
-------
