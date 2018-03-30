@@ -34,9 +34,8 @@ BROWSER
 
 ---------------------
 
-FOR FIREFOX (has to pass as environment vairable form maven Ex: -DBrowser = chrome/firefox)
-
-read comments in ->  /src/main/java/utilities/ChooseBrowser.java
+FOR FIREFOX  -> read comments in ->  /src/main/java/utilities/ChooseBrowser.java
+*Need to implement passing environment vairable form maven Ex: -DBrowser = chrome/firefox)
 
 ----------------------
 
