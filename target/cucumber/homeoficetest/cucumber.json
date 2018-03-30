@@ -18,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3781931584,
+              "duration": 4447712320,
               "status": "passed"
             },
             "line": 7,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 1316670589,
+              "duration": 1353227418,
               "status": "passed"
             },
             "line": 8,
@@ -42,12 +42,12 @@
           },
           {
             "result": {
-              "duration": 7699424926,
-              "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertEquals(Assert.java:125)\n\tat org.testng.Assert.assertEquals(Assert.java:178)\n\tat org.testng.Assert.assertEquals(Assert.java:188)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:68)\n\tat ✽.Then read registration number from inputfolder and enter(hm.feature:9)\n",
+              "duration": 6740247368,
+              "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertEquals(Assert.java:125)\n\tat org.testng.Assert.assertEquals(Assert.java:178)\n\tat org.testng.Assert.assertEquals(Assert.java:188)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:70)\n\tat ✽.Then read registration number from inputfolder and enter registration number validate color and make then generate report(hm.feature:9)\n",
               "status": "failed"
             },
             "line": 9,
-            "name": "read registration number from inputfolder and enter",
+            "name": "read registration number from inputfolder and enter registration number validate color and make then generate report",
             "match": {
               "location": "DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter()"
             },
@@ -57,6 +57,291 @@
         "tags": [
           {
             "line": 5,
+            "name": "@hmpp"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": ": search vehicle number in governament stite",
+        "description": "",
+        "id": "dvla;:-search-vehicle-number-in-governament-stite;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2517604996,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "As end user i want to open browser and enter home url",
+            "match": {
+              "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1305753952,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on start  button",
+            "match": {
+              "location": "DvlaCucumberStepDefs.click_on_start_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 783033071,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter registration number N864PPL then validate made JEEP and color BLUE",
+            "match": {
+              "arguments": [
+                {
+                  "val": "N864PPL",
+                  "offset": 26
+                },
+                {
+                  "val": "JEEP",
+                  "offset": 53
+                },
+                {
+                  "val": "BLUE",
+                  "offset": 68
+                }
+              ],
+              "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@hmp"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": ": search vehicle number in governament stite",
+        "description": "",
+        "id": "dvla;:-search-vehicle-number-in-governament-stite;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2068974368,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "As end user i want to open browser and enter home url",
+            "match": {
+              "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1381289457,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on start  button",
+            "match": {
+              "location": "DvlaCucumberStepDefs.click_on_start_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 769791544,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter registration number BK04VJF then validate made MERCEDES and color SILVER",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BK04VJF",
+                  "offset": 26
+                },
+                {
+                  "val": "MERCEDES",
+                  "offset": 53
+                },
+                {
+                  "val": "SILVER",
+                  "offset": 72
+                }
+              ],
+              "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@hmp"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": ": search vehicle number in governament stite",
+        "description": "",
+        "id": "dvla;:-search-vehicle-number-in-governament-stite;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2287340485,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "As end user i want to open browser and enter home url",
+            "match": {
+              "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1404700962,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on start  button",
+            "match": {
+              "location": "DvlaCucumberStepDefs.click_on_start_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 588961504,
+              "error_message": "java.lang.AssertionError: expected [RED] but found [WHITE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertEquals(Assert.java:125)\n\tat org.testng.Assert.assertEquals(Assert.java:178)\n\tat org.testng.Assert.assertEquals(Assert.java:188)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(DvlaCucumberStepDefs.java:89)\n\tat ✽.Then Enter registration number WAZ2144 then validate made VOLKSWAGEN and color RED(hm.feature:16)\n",
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "Enter registration number WAZ2144 then validate made VOLKSWAGEN and color RED",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WAZ2144",
+                  "offset": 26
+                },
+                {
+                  "val": "VOLKSWAGEN",
+                  "offset": 53
+                },
+                {
+                  "val": "RED",
+                  "offset": 74
+                }
+              ],
+              "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@hmp"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": ": search vehicle number in governament stite",
+        "description": "",
+        "id": "dvla;:-search-vehicle-number-in-governament-stite;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2130129998,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "As end user i want to open browser and enter home url",
+            "match": {
+              "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3467324436,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on start  button",
+            "match": {
+              "location": "DvlaCucumberStepDefs.click_on_start_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 767481925,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter registration number BK04VJF then validate made MERCEDES and color SILVER",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BK04VJF",
+                  "offset": 26
+                },
+                {
+                  "val": "MERCEDES",
+                  "offset": 53
+                },
+                {
+                  "val": "SILVER",
+                  "offset": 72
+                }
+              ],
+              "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
             "name": "@hmp"
           }
         ]

@@ -1,10 +1,12 @@
 package cucumber.test.steps;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import utilities.ChooseBrowser;
 import utilities.DvlaPageObjects;
 
@@ -40,18 +42,29 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
         //throw new PendingException();
     }
 /**
+ *  -----------------------------------------> IMPORTANT AREA :) <---------------------------------------------
  *
- *  NEED TO IMPLEMENT SOFT ASSERTION TO AVOID TERMINATION OF TEST WHEN ASSERT FAILS
+ *  Step Def read_registration_number_from_inputfolder_and_enter will search all files and pick .xlsx file from source folder
+ *  Then
+ *  Will read .XLSx files data and write to a java list object
+ *  Then
+ *  List will be iterated to pass data to web UI  registration number field
+ *  Then
+ *  Color and make asserted  -> expected VS Actual
+ *  Then
+ *  During process file writer will write Pass/Fail based on validation output ALONG WITH cucumber report
  *
- *  LOGIC CAN BE SIMPLIFIED
+ *  **NEED TO IMPLEMENT SOFT ASSERTION TO AVOID TERMINATION OF TEST WHEN ASSERT FAILS
  *
- *  MESSEY LOGIC NEED TO BE SEPERATED FROM TEST METHOD
+ *  **LOGIC CAN BE SIMPLIFIED
  *
- *  GEED TO GENERATE EXCEL BASED REPORT CAN USE CUCUMBER GENERATED report.json FILE RESIDE IN TARGET/CUCUMBER/
+ *  **LOGIC NEED TO BE SEPERATED FROM TEST METHOD FOR REUSABILITY AND READABILITY
+ *
+ *  **CAN GENERATE EXCEL BASED REPORT CAN USE CUCUMBER GENERATED report.json FILE RESIDE IN TARGET/CUCUMBER/
  *
  *
  */
-    @Then("^read registration number from inputfolder and enter$")
+    @Then("^read registration number from inputfolder and enter registration number validate color and make then generate report$")
     public void read_registration_number_from_inputfolder_and_enter() throws Throwable {
         List usefulFilesData = returnCellData(findFilesInfo(folder));
         int j =0 ; int k=0; int rowClont =1; String resultToExcel;
@@ -72,8 +85,33 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
         driver.close();
     }
 
+    /**
+     *
+     * CUCUMBER DATA DRIVEN
+     *
+     *
+     */
+
+
+    @Then("^Enter registration number (.*) then validate made (.*) and color (.*)$")
+    public void enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String RegNumber,String Made, String Colours) throws Throwable {
+        driver.findElement( enter_venicle_number ).sendKeys( RegNumber );
+        driver.findElement( continue_button ).submit();
+        try { Assert.assertFalse( driver.findElement( You_must_enter_your_registration_number_in_a_valid_format ).isDisplayed() ); } catch (Exception e) {   }
+        Assert.assertEquals(driver.findElement(Make).getText() ,Made);
+        Assert.assertEquals(driver.findElement(Colour).getText(),Colours);
+        driver.navigate().back();
+        driver.close();
+    }
+
+
+
+
 
     public DvlaCucumberStepDefs() throws Exception {
     }
 
+    @AfterClass
+
+void killBrowser(){driver.close();}
 }
