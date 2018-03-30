@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#Reprot Will be generated in /target/cucumber/homeoficetest.index.html"
+          }
+        ],
+        "line": 6,
+        "name": "search vehicle number in governament stite",
+        "description": "",
+        "id": "dvla;search-vehicle-number-in-governament-stite",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3781931584,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "As end user i want to open browser and enter home url",
+            "match": {
+              "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1316670589,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on start  button",
+            "match": {
+              "location": "DvlaCucumberStepDefs.click_on_start_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7699424926,
+              "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertEquals(Assert.java:125)\n\tat org.testng.Assert.assertEquals(Assert.java:178)\n\tat org.testng.Assert.assertEquals(Assert.java:188)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:68)\n\tat ✽.Then read registration number from inputfolder and enter(hm.feature:9)\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "read registration number from inputfolder and enter",
+            "match": {
+              "location": "DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@hmp"
+          }
+        ]
+      }
+    ],
+    "name": "dvla",
+    "description": "",
+    "id": "dvla",
+    "keyword": "Feature",
+    "uri": "hm.feature"
+  }
+]

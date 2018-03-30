@@ -128,13 +128,13 @@
                   </a> <!-- feature(dvla) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(dvla)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [false] but found [true]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [RED] but found [BLUE]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.AssertionError: expected [false] but found [true]
-	at cucumber.test.steps.MyStepdefs.read_registration_number_from_inputfolder_and_enter(MyStepdefs.java:49)
-	at ?.Then read registration number from inputfolder and enter(hm.feature:7)
-... Removed 33 stack frames
+Caused by: java.lang.AssertionError: expected [RED] but found [BLUE]
+	at cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:68)
+	at ✽.Then read registration number from inputfolder and enter(hm.feature:9)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
@@ -205,12 +205,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'RunCukesTest')
-data.setCell(0, 3, 7063);
+data.setCell(0, 3, 12873);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -245,11 +245,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(dvla)</span>
-                <span class="method-start">447 ms</span>
+                <span class="method-start">829 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">7516 ms</span>
+                <span class="method-start">13716 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

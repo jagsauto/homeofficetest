@@ -15,6 +15,15 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+/**
+ * Author: jagadeesh vendi
+ *
+ * Date : 30/March/2018
+ *
+ * This class deals Folder and File operations
+ *
+ */
+
 public class FindFilesInFolder {
 
     private static XSSFSheet Esheet;
@@ -35,6 +44,18 @@ public class FindFilesInFolder {
      //   returnCellData(findFilesInfo(folder));
 
     }
+
+    /**
+     * Date : 30/March/2018
+     * Method findFilesInfo accepts Folder Object as input
+     * And Returns List of files in the folder
+     *--------------------------------------------------------
+     * As per requirement Method will search all file types of files
+     * then return only CSV and .XLSX files only.
+     * -------------------------------------------------------
+     *
+     */
+
 
     public static List findFilesInfo(File folder) throws Exception {
         List<String> usefulFiles = new ArrayList<String>();
@@ -63,6 +84,14 @@ public class FindFilesInFolder {
     }
 
 
+    /**
+     *-------------------------------------------------------------
+     * Method returnCellData accepts List Object as input
+     * And Returns List object contains all cell vales from input files
+     *-------------------------------------------------------------
+     *
+     */
+
 
     public static List returnCellData(List usefulFile) throws Exception {
         List<String> usefulFilesData = new ArrayList<String>();
@@ -85,9 +114,8 @@ public class FindFilesInFolder {
 
     public static XSSFSheet setExcelFile(String Path, String SheetName) throws Exception {
         try {
-            // Open the Excel file
+
             FileInputStream ExcelFile = new FileInputStream(Path);
-            // Access the required test data sheet
             Excel = new XSSFWorkbook(ExcelFile);
             Esheet = Excel.getSheet(SheetName);
             System.out.print("Row Count:  "  + Esheet.getLastRowNum());
@@ -110,7 +138,17 @@ public class FindFilesInFolder {
     }
 
 
-     public static void setCellData(String VenicalInfo, int ColNum,int rowNum,String resultToExcel) throws Exception	{
+    /**
+     *
+     * ----------------------------------------------------
+     * Method writeToExcel will recieve runtime resuts as
+     * string and write in specified location as .XLSX file
+     * ----------------------------------------------------
+     *
+     */
+
+
+     public static void writeToExcel(String VenicalInfo, int ColNum, int rowNum, String resultToExcel) throws Exception	{
 
         try{
             System.out.print("Dvla File Path:   "  + folder.getAbsolutePath() +"/resultsoutput/"+  "results.xlsx");

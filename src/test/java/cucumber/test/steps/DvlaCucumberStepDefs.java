@@ -7,13 +7,19 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import utilities.ChooseBrowser;
 import utilities.DvlaPageObjects;
-import utilities.FindFilesInFolder;
+
 import java.io.File;
 import java.util.List;
 import static utilities.FindFilesInFolder.findFilesInfo;
 import static utilities.FindFilesInFolder.returnCellData;
-import static utilities.FindFilesInFolder.setCellData;
+import static utilities.FindFilesInFolder.writeToExcel;
 
+
+/**
+ * Author: Jagadeesh Vendi
+ * Date : 30/March/2018
+ *
+ */
 
 public class DvlaCucumberStepDefs extends DvlaPageObjects {
 
@@ -34,8 +40,14 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
         //throw new PendingException();
     }
 /**
- * NEED TO IMPLEMENT SOFT ASSETION TO AVOID TERMINATION OF TEST WHEN ASSERT FAILS
  *
+ *  NEED TO IMPLEMENT SOFT ASSERTION TO AVOID TERMINATION OF TEST WHEN ASSERT FAILS
+ *
+ *  LOGIC CAN BE SIMPLIFIED
+ *
+ *  MESSEY LOGIC NEED TO BE SEPERATED FROM TEST METHOD
+ *
+ *  GEED TO GENERATE EXCEL BASED REPORT CAN USE CUCUMBER GENERATED report.json FILE RESIDE IN TARGET/CUCUMBER/
  *
  *
  */
@@ -45,19 +57,16 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
         int j =0 ; int k=0; int rowClont =1; String resultToExcel;
         for(int i=0;i<=usefulFilesData.size();rowClont++){
         resultToExcel ="PASS";
-        setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);
+        writeToExcel(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);
         driver.findElement( enter_venicle_number ).sendKeys( usefulFilesData.get( i ).toString() );
         driver.findElement( continue_button ).submit();i = i+1;
         try { Assert.assertFalse( driver.findElement( You_must_enter_your_registration_number_in_a_valid_format ).isDisplayed() ); } catch (Exception e) {   }
         Assert.assertEquals(driver.findElement(Make).getText() ,usefulFilesData.get( i ).toString()); i = i+1;k=k+1;
-        if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString()))
-          resultToExcel="PASS";
+        if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString())) resultToExcel="PASS";
         else resultToExcel="FAIL" ;
-
-
-        setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);
+        writeToExcel(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);
         Assert.assertEquals(driver.findElement(Colour).getText(),usefulFilesData.get( i ).toString());
-        i = i+1; k=k+1;if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString()))  resultToExcel="PASS";  resultToExcel ="PASS"; setCellData(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);k=0;j= j+1;
+        i = i+1; k=k+1;if(driver.findElement(Colour).getText().equals(usefulFilesData.get( i ).toString()))  resultToExcel="PASS";  resultToExcel ="PASS"; writeToExcel(usefulFilesData.get( i ).toString(),k,rowClont,resultToExcel);k=0;j= j+1;
         driver.navigate().back();
         }
         driver.close();

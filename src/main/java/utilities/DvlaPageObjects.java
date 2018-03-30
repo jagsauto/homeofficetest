@@ -2,6 +2,20 @@ package utilities;
 
 import org.openqa.selenium.By;
 
+
+/**
+ * Author: Jagadeesh Vendi
+ *
+ * Date : 30/March/2018
+ *
+ * This class maintains all UI object references aand acting as object repository
+ *
+ *
+ * RECOMMENDATION: setup set and get methods
+ *
+ */
+
+
 public class DvlaPageObjects {
 
  public String home_url = "https://www.gov.uk/get-vehicle-information-from-dvla";
