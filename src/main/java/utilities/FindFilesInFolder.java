@@ -15,6 +15,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import static utilities.GeneralUtils.timestamp;
+
 /**
  * Author: jagadeesh vendi
  *
@@ -151,7 +153,11 @@ public class FindFilesInFolder {
      public static void writeToExcel(String VenicalInfo, int ColNum, int rowNum, String resultToExcel) throws Exception	{
 
         try{
-            System.out.print("Dvla File Path:   "  + folder.getAbsolutePath() +"/resultsoutput/"+  "results.xlsx");
+           // String reportPath = folder.getAbsolutePath() +"/target/"+ "/ExcelReports/" +"Rep_"+timestamp() + "_results.xlsx";
+            String reportPath = folder.getAbsolutePath() +"/resultsoutput/"+"results.xlsx";
+
+
+            System.out.print("Dvla File Path:   "  + reportPath);
 
             Row  = Esheet.getRow(0);
             Cell = Row.createCell(ColNum);
@@ -165,7 +171,7 @@ public class FindFilesInFolder {
 
 
 
-             FileOutputStream fileOut = new FileOutputStream( folder.getAbsolutePath() +"/resultsoutput/"+  "results.xlsx");
+             FileOutputStream fileOut = new FileOutputStream( reportPath);
             Excel.write(fileOut);
             fileOut.flush();
             fileOut.close();

@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="34015" started-at="2018-03-30T12:31:45Z" finished-at="2018-03-30T12:32:19Z">
+  <suite name="Surefire suite" duration-ms="32906" started-at="2018-03-30T13:37:01Z" finished-at="2018-03-30T13:37:34Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCukesTest@5d5eef3d]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCukesTest@100fc185]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="34015" started-at="2018-03-30T12:31:45Z" finished-at="2018-03-30T12:32:19Z">
+    <test name="Surefire test" duration-ms="32906" started-at="2018-03-30T13:37:01Z" finished-at="2018-03-30T13:37:34Z">
       <class name="RunCukesTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:RunCukesTest@5d5eef3d]" name="setUpClass" is-config="true" duration-ms="306" started-at="2018-03-30T13:31:45Z" finished-at="2018-03-30T13:31:45Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:RunCukesTest@100fc185]" name="setUpClass" is-config="true" duration-ms="570" started-at="2018-03-30T14:37:01Z" finished-at="2018-03-30T14:37:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCukesTest@5d5eef3d]" name="feature" duration-ms="33522" started-at="2018-03-30T13:31:45Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-30T13:32:19Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCukesTest@100fc185]" name="feature" duration-ms="32145" started-at="2018-03-30T14:37:02Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-30T14:37:34Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@ Caused by: java.lang.AssertionError: expected [RED] but found [BLUE]
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:85)
+	at cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:94)
 	at ✽.Then read registration number from inputfolder and enter registration number validate color and make then generate report(hm.feature:9)
 ]]>
             </full-stacktrace>
@@ -74,7 +74,7 @@ Caused by: java.lang.AssertionError: expected [RED] but found [BLUE]
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunCukesTest@5d5eef3d]" name="tearDownClass" is-config="true" duration-ms="47" started-at="2018-03-30T13:32:19Z" finished-at="2018-03-30T13:32:19Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunCukesTest@100fc185]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2018-03-30T14:37:34Z" finished-at="2018-03-30T14:37:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
