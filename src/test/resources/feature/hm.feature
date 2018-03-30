@@ -2,14 +2,14 @@ Feature: dvla
 
   #Reprot Will be generated in /target/cucumber/homeoficetest.index.html
   
-  @hmpp
+  @homeoffice_excelreader
   Scenario: search vehicle number in governament stite
     Given As end user i want to open browser and enter home url
     And click on start  button
     Then read registration number from inputfolder and enter registration number validate color and make then generate report
 
 
-  @hmp
+  @homeoffice_datadriver
   Scenario Outline: : search vehicle number in governament stite
     Given As end user i want to open browser and enter home url
     And click on start  button

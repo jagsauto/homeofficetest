@@ -22,7 +22,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 5,
-      "name": "@hmpp"
+      "name": "@homeoffice_excelreader"
     }
   ]
 });
@@ -45,22 +45,22 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 4447712320,
+  "duration": 4096344688,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1353227418,
+  "duration": 1412837083,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter()"
 });
 formatter.result({
-  "duration": 6740247368,
-  "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertEquals(Assert.java:125)\n\tat org.testng.Assert.assertEquals(Assert.java:178)\n\tat org.testng.Assert.assertEquals(Assert.java:188)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:70)\n\tat ✽.Then read registration number from inputfolder and enter registration number validate color and make then generate report(hm.feature:9)\n",
+  "duration": 5481998382,
+  "error_message": "java.lang.AssertionError: expected [RED] but found [BLUE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\n\tat org.testng.Assert.assertEquals(Assert.java:116)\n\tat org.testng.Assert.assertEquals(Assert.java:190)\n\tat org.testng.Assert.assertEquals(Assert.java:200)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.read_registration_number_from_inputfolder_and_enter(DvlaCucumberStepDefs.java:85)\n\tat ✽.Then read registration number from inputfolder and enter registration number validate color and make then generate report(hm.feature:9)\n",
   "status": "failed"
 });
 formatter.scenarioOutline({
@@ -73,7 +73,7 @@ formatter.scenarioOutline({
   "tags": [
     {
       "line": 12,
-      "name": "@hmp"
+      "name": "@homeoffice_datadriver"
     }
   ]
 });
@@ -156,7 +156,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 12,
-      "name": "@hmp"
+      "name": "@homeoffice_datadriver"
     }
   ]
 });
@@ -184,14 +184,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 2517604996,
+  "duration": 2094849747,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1305753952,
+  "duration": 1341532199,
   "status": "passed"
 });
 formatter.match({
@@ -212,7 +212,7 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 783033071,
+  "duration": 836484597,
   "status": "passed"
 });
 formatter.scenario({
@@ -225,7 +225,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 12,
-      "name": "@hmp"
+      "name": "@homeoffice_datadriver"
     }
   ]
 });
@@ -253,14 +253,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 2068974368,
+  "duration": 2067729157,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1381289457,
+  "duration": 1450896594,
   "status": "passed"
 });
 formatter.match({
@@ -281,7 +281,7 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 769791544,
+  "duration": 856288494,
   "status": "passed"
 });
 formatter.scenario({
@@ -294,7 +294,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 12,
-      "name": "@hmp"
+      "name": "@homeoffice_datadriver"
     }
   ]
 });
@@ -322,14 +322,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 2287340485,
+  "duration": 2130680234,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 1404700962,
+  "duration": 1347944549,
   "status": "passed"
 });
 formatter.match({
@@ -350,8 +350,8 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 588961504,
-  "error_message": "java.lang.AssertionError: expected [RED] but found [WHITE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\n\tat org.testng.Assert.assertEquals(Assert.java:125)\n\tat org.testng.Assert.assertEquals(Assert.java:178)\n\tat org.testng.Assert.assertEquals(Assert.java:188)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(DvlaCucumberStepDefs.java:89)\n\tat ✽.Then Enter registration number WAZ2144 then validate made VOLKSWAGEN and color RED(hm.feature:16)\n",
+  "duration": 571455438,
+  "error_message": "java.lang.AssertionError: expected [RED] but found [WHITE]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\n\tat org.testng.Assert.assertEquals(Assert.java:116)\n\tat org.testng.Assert.assertEquals(Assert.java:190)\n\tat org.testng.Assert.assertEquals(Assert.java:200)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(DvlaCucumberStepDefs.java:108)\n\tat ✽.Then Enter registration number WAZ2144 then validate made VOLKSWAGEN and color RED(hm.feature:16)\n",
   "status": "failed"
 });
 formatter.scenario({
@@ -364,7 +364,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 12,
-      "name": "@hmp"
+      "name": "@homeoffice_datadriver"
     }
   ]
 });
@@ -392,14 +392,14 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.as_end_user_i_want_to_open_browser_and_enter_home_url()"
 });
 formatter.result({
-  "duration": 2130129998,
+  "duration": 2245228732,
   "status": "passed"
 });
 formatter.match({
   "location": "DvlaCucumberStepDefs.click_on_start_button()"
 });
 formatter.result({
-  "duration": 3467324436,
+  "duration": 7447327034,
   "status": "passed"
 });
 formatter.match({
@@ -420,7 +420,8 @@ formatter.match({
   "location": "DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(String,String,String)"
 });
 formatter.result({
-  "duration": 767481925,
-  "status": "passed"
+  "duration": 70701687,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform\u003dMac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 69 milliseconds\nBuild info: version: \u00272.40.0\u0027, revision: \u00274c5c0568b004f67810ee41c459549aa4b09c651e\u0027, time: \u00272014-02-19 11:13:01\u0027\nSystem info: host: \u0027priyas-MacBook-Pro.local\u0027, ip: \u0027192.168.0.15\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.9.5\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85), userDataDir\u003d/var/folders/q9/f3rscxfn12j4d4d8r27z3v7w0000gn/T/.org.chromium.Chromium.GaomLo}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d65.0.3325.181, platform\u003dMAC, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 73b6189eca000181287af780a1dd49fe\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:326)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:415)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:318)\n\tat cucumber.test.steps.DvlaCucumberStepDefs.enterRegistrationNumberRegNumberThenValidateMadeMadeAndColorColours(DvlaCucumberStepDefs.java:104)\n\tat ✽.Then Enter registration number BK04VJF then validate made MERCEDES and color SILVER(hm.feature:16)\n",
+  "status": "failed"
 });
 });

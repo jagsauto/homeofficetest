@@ -4,6 +4,9 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -11,6 +14,7 @@ import utilities.ChooseBrowser;
 import utilities.DvlaPageObjects;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import static utilities.FindFilesInFolder.findFilesInfo;
 import static utilities.FindFilesInFolder.returnCellData;
@@ -44,7 +48,7 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
 /**
  *  -----------------------------------------> IMPORTANT AREA :) <---------------------------------------------
  *
- *  Step Def read_registration_number_from_inputfolder_and_enter will search all files and pick .xlsx file from source folder
+ *  Step Def "read_registration_number_from_inputfolder_and_enter" will search all files and pick .xlsx file from source folder
  *  Then
  *  Will read .XLSx files data and write to a java list object
  *  Then
@@ -52,7 +56,7 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
  *  Then
  *  Color and make asserted  -> expected VS Actual
  *  Then
- *  During process file writer will write Pass/Fail based on validation output ALONG WITH cucumber report
+ *  During process file writer will write (need to reifne) Pass/Fail based on validation output ALONG WITH cucumber report
  *
  *  **NEED TO IMPLEMENT SOFT ASSERTION TO AVOID TERMINATION OF TEST WHEN ASSERT FAILS
  *
@@ -89,6 +93,8 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
      *
      * CUCUMBER DATA DRIVEN
      *
+     * NICE IMPLEMENT A CONNECTOR WHICH WILL PASS DATA TO FEATURE FILE - > CUCUMBER DATA DRIVEN  FROM .XLS/CSV
+     *
      *
      */
 
@@ -102,16 +108,18 @@ public class DvlaCucumberStepDefs extends DvlaPageObjects {
         Assert.assertEquals(driver.findElement(Colour).getText(),Colours);
         driver.navigate().back();
         driver.close();
+
     }
-
-
-
-
 
     public DvlaCucumberStepDefs() throws Exception {
     }
 
     @AfterClass
 
-void killBrowser(){driver.close();}
+void killBrowser(){
+        driver.close();
+        driver.quit();
+
+
+    }
 }

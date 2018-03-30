@@ -118,7 +118,7 @@ public class FindFilesInFolder {
             FileInputStream ExcelFile = new FileInputStream(Path);
             Excel = new XSSFWorkbook(ExcelFile);
             Esheet = Excel.getSheet(SheetName);
-            System.out.print("Row Count:  "  + Esheet.getLastRowNum());
+            System.out.print("Row Count:  "  + Esheet.getLastRowNum() + "\n");
 
         } catch (Exception e){
             throw (e);
